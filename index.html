@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Join Chat Room</h2>
+  <input id="usernameInput" placeholder="Enter your name">
+  <input id="roomInput" placeholder="Enter room name">
+  <button onclick="joinRoom()">Join</button>
+
+  <div id="chat" style="display:none;">
+    <div id="typing"></div>
+    <div id="messages"></div>
+    <input id="messageInput" placeholder="Type a message">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="title">Join Chat Room</h2>
+  <div id="joinArea" class="join-area">
+    <input id="usernameInput" placeholder="Enter your name">
+    <input id="roomInput" placeholder="Enter room name">
+    <button onclick="joinRoom()">Join</button>
+  </div>
+
+  <div id="chat" class="chat-container" style="display: none;">
+    <div id="typing" class="typing-indicator"></div>
+    <div id="messages" class="message-box"></div>
+    <input id="messageInput" placeholder="Type a message">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
